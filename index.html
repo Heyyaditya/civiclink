@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymous Problem Feed</title>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      background-color: #222222b6;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      border-bottom: #ff0000 solid 2px;
+      width: 100%;
+      backdrop-filter: blur(5px);
+    
+    }
+   header .logo {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;  
+  text-align: center;
+  margin-left: 45%;
+}
+   
+  
+
+    /* Feed Section */
+    .feed {
+    margin-top: 30px;
+    padding: 30px;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+    .post {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    .post .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .post .user-info img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .post .user-info .user-id {
+      font-size: 14px;
+      color: #ff0000;
+    }
+    .post img {
+      width: 100%;          
+      border-radius: 8px;
+    }
+    .post .details {
+      margin: 10px 0;
+    }
+    .post .details .location {
+      font-size: 14px;
+      color: #ff0000;
+    }
+    .post .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .post .actions button {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #e10202;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      border-top: #0b0000 solid 2px;
+      width: 100%;
+    }
+    footer .icon {
+      color: #fff;
+      text-align: center;
+    }
+    footer .icon:hover {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo" > CivicLink</div>
+    
+    
+  </header>
+
+  <!-- Feed -->
+  <div id="feed" class="feed">
+    <div class="post">
+      <div class="user-info">
+        <img src="https://thumbs.dreamstime.com/b/social-profile-over-bright-red-background-iconic-image-networks-anonymous-very-personal-character-148178937.jpg" alt="User Profile" width="50" height="50">
+        <span class="user-id">ID: Anonymous1234</span>
+      </div>
+      
+      <div class="details">
+        <p>The roads are fully damaged that it is very difficult travel here Even vehicles are getting damaged due to these roads</p>
+        <p class="location">Location: kachiguda,Hyderabad,Telengana</p>
+        <img src="https://th.bing.com/th/id/OIP.lAC1_3Hllatk8DPZG3ALvwHaE8?rs=1&pid=ImgDetMain" alt="Problem Photo">
+      </div>
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>↗️ Share</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="user-info">
+        <img src="https://thumbs.dreamstime.com/b/social-profile-over-bright-red-background-iconic-image-networks-anonymous-very-personal-character-148178937.jpg" alt="User Profile" width="50" height="50">
+        
+        <span class="user-id">ID: Anonymous1234</span>
+      </div>
+      
+      <div class="details">
+        <p>No water supply for this village everyone depends on this one well but now its not enough water </p>
+        <p class="location">Location: Khadiyal village, Mahasrashtra</p>
+        <img src="https://aniportalimages.s3.amazonaws.com/media/details/ghnryjh.jpg" alt="Problem Photo">
+      </div>
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>↗️ Share</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="user-info">
+        <img src="https://thumbs.dreamstime.com/b/social-profile-over-bright-red-background-iconic-image-networks-anonymous-very-personal-character-148178937.jpg" alt="User Profile" width="50" height="50">
+        
+        <span class="user-id">ID: Anonymous@134</span>
+      </div>
+      
+      <div class="details">
+        <p>Illegal dumping in this area causes a lot public diturbance and also viral fevers </p>
+        <p class="location">Location:Punagipoor,vijayawada</p>
+        <img src="https://th.bing.com/th/id/OIP.52_rFJXfAlE4NFFofVSi2QHaE-?rs=1&pid=ImgDetMain" alt="Problem Photo">
+      </div>
+      <div class="actions">
+        <button>👍 Like</button>
+        <button>💬 Comment</button>
+        <button>↗️ Share</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 60px;">
+      <a href="#feed">
+          <img src="https://img.icons8.com/?size=100&id=9zcV0gKAozhn&format=png&color=1A1A1A" alt="Home" style="width:30px;height:30px;" />
+      </a>
+      <a href="https://www.google.com/maps/d/embed?mid=1zWxEImYuzBY-Pkk6dqzL77HoIWCTApg&ehbc=2E312F">
+          <img src="https://img.icons8.com/?size=100&id=ciXJh897yhfB&format=png&color=1A1A1A" alt="Location" style="width:30px;height:30px;" />
+      </a>
+      <a href="https://lackadaisical-spring-shoe.glitch.me/">
+          <img src="https://img.icons8.com/?size=100&id=J92J1klqkD0Z&format=png&color=1A1A1A" alt="Add" style="width:30px;height:30px;" />
+      </a>
+      <a href="your-bell-link">
+          <img src="https://img.icons8.com/?size=100&id=VpTDn9ER10Cs&format=png&color=1A1A1A" alt="Notification" style="width:30px;height:30px;" />
+      </a>
+      <a href="your-user-link">
+          <img src="https://img.icons8.com/?size=100&id=3vzrHNkASNux&format=png&color=1A1A1A" alt="User" style="width:30px;height:30px;" />
+      </a>
+  </div>
+  </footer>
+</body>
+</html>
